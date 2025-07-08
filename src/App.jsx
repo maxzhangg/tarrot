@@ -17,7 +17,7 @@ function App() {
 
   // 加载 tarot.json
   useEffect(() => {
-    fetch("/tarot.json")
+    fetch("./tarot.json")
       .then((res) => res.json())
       .then((data) => setTarotDeck(data))
       .catch((err) => console.error("无法加载 tarot.json", err));

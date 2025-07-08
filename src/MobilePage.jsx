@@ -13,7 +13,7 @@ export default function MobilePage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("/tarot.json")
+    fetch("./tarot.json")
       .then((res) => res.json())
       .then((data) => setTarotDeck(data));
   }, []);
