@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tarot/static/css/main.705e9131.css",
+    "main.js": "/tarot/static/js/main.8456480f.js",
+    "index.html": "/tarot/index.html",
+    "main.705e9131.css.map": "/tarot/static/css/main.705e9131.css.map",
+    "main.8456480f.js.map": "/tarot/static/js/main.8456480f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.705e9131.css",
+    "static/js/main.8456480f.js"
+  ]
+}
