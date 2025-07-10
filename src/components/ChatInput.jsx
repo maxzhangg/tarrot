@@ -1,32 +1,51 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function ChatInput({ onSend, disabled }) {
+export default function ChatInput({ onSend, onDraw, disabled }) {
   const [input, setInput] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!input.trim()) return;
-    onSend(input.trim());
-    setInput(""); // 清空输入框
-  };
+  function handleSend() {
+    if (input.trim()) {
+      onSend(input);
+      setInput("");
+    }
+  }
+
+  function handleDraw() {
+    if (input.trim()) {
+      onDraw(input);
+      setInput("");
+    }
+  }
 
   return (
-    <form onSubmit={handleSubmit} className="flex mt-2">
+    <div className="flex">
       <input
-        type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            handleSend();
+          }
+        }}
+        className="flex-1 border px-2 py-1 rounded-l"
         placeholder="输入问题并回车发送..."
-        className="flex-1 border rounded-l px-3 py-2 text-sm bg-gray-100"
         disabled={disabled}
       />
       <button
-        type="submit"
-        className="bg-purple-600 text-white px-4 py-2 rounded-r text-sm"
+        className="bg-yellow-500 text-white px-4 py-1 rounded-r hover:bg-yellow-600"
+        onClick={handleDraw}
+        disabled={disabled}
+      >
+        抽牌
+      </button>
+      <button
+        className="bg-purple-600 text-white px-4 py-1 ml-2 rounded hover:bg-purple-700"
+        onClick={handleSend}
         disabled={disabled}
       >
         发送
       </button>
-    </form>
+    </div>
   );
 }
