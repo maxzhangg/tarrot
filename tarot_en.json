@@ -1,0 +1,1094 @@
+[
+  {
+    "index": 0,
+    "name": "The Fool",
+    "image": "images/major_0.png",
+    "direction": "Upright",
+    "meaning": "new beginnings, freedom, adventure"
+  },
+  {
+    "index": 1,
+    "name": "The Magician",
+    "image": "images/major_1.png",
+    "direction": "Upright",
+    "meaning": "action, creativity, confidence"
+  },
+  {
+    "index": 2,
+    "name": "The High Priestess",
+    "image": "images/major_2.png",
+    "direction": "Upright",
+    "meaning": "intuition, subconscious, wisdom"
+  },
+  {
+    "index": 3,
+    "name": "The Empress",
+    "image": "images/major_3.png",
+    "direction": "Upright",
+    "meaning": "fertility, beauty, motherhood"
+  },
+  {
+    "index": 4,
+    "name": "The Emperor",
+    "image": "images/major_4.png",
+    "direction": "Upright",
+    "meaning": "authority, control, stability"
+  },
+  {
+    "index": 5,
+    "name": "The Hierophant",
+    "image": "images/major_5.png",
+    "direction": "Upright",
+    "meaning": "tradition, faith, intellectual heritage"
+  },
+  {
+    "index": 6,
+    "name": "The Lovers",
+    "image": "images/major_6.png",
+    "direction": "Upright",
+    "meaning": "love, choice, harmony"
+  },
+  {
+    "index": 7,
+    "name": "The Chariot",
+    "image": "images/major_7.png",
+    "direction": "Upright",
+    "meaning": "victory, willpower, control"
+  },
+  {
+    "index": 8,
+    "name": "Strength",
+    "image": "images/major_8.png",
+    "direction": "Upright",
+    "meaning": "courage, patience, self-control"
+  },
+  {
+    "index": 9,
+    "name": "The Hermit",
+    "image": "images/major_9.png",
+    "direction": "Upright",
+    "meaning": "introspection, solitude, search for truth"
+  },
+  {
+    "index": 10,
+    "name": "Wheel of Fortune",
+    "image": "images/major_10.png",
+    "direction": "Upright",
+    "meaning": "turning point, fate, cycles of change"
+  },
+  {
+    "index": 11,
+    "name": "Justice",
+    "image": "images/major_11.png",
+    "direction": "Upright",
+    "meaning": "justice, law, truth"
+  },
+  {
+    "index": 12,
+    "name": "The Hanged Man",
+    "image": "images/major_12.png",
+    "direction": "Upright",
+    "meaning": "sacrifice, waiting, insight"
+  },
+  {
+    "index": 13,
+    "name": "Death",
+    "image": "images/major_13.png",
+    "direction": "Upright",
+    "meaning": "ending, rebirth, transformation"
+  },
+  {
+    "index": 14,
+    "name": "Temperance",
+    "image": "images/major_14.png",
+    "direction": "Upright",
+    "meaning": "balance, harmony, frugality"
+  },
+  {
+    "index": 15,
+    "name": "The Devil",
+    "image": "images/major_15.png",
+    "direction": "Upright",
+    "meaning": "temptation, bondage, desire"
+  },
+  {
+    "index": 16,
+    "name": "The Tower",
+    "image": "images/major_16.png",
+    "direction": "Upright",
+    "meaning": "sudden change, shock, deconstruction"
+  },
+  {
+    "index": 17,
+    "name": "The Star",
+    "image": "images/major_17.png",
+    "direction": "Upright",
+    "meaning": "hope, inspiration, healing"
+  },
+  {
+    "index": 18,
+    "name": "The Moon",
+    "image": "images/major_18.png",
+    "direction": "Upright",
+    "meaning": "illusion, subconscious, confusion"
+  },
+  {
+    "index": 19,
+    "name": "The Sun",
+    "image": "images/major_19.png",
+    "direction": "Upright",
+    "meaning": "success, joy, 正能量"
+  },
+  {
+    "index": 20,
+    "name": "Judgement",
+    "image": "images/major_20.png",
+    "direction": "Upright",
+    "meaning": "awakening, rebirth, self-reflection"
+  },
+  {
+    "index": 21,
+    "name": "The World",
+    "image": "images/major_21.png",
+    "direction": "Upright",
+    "meaning": "completion, completion, achievement"
+  },
+  {
+    "index": 22,
+    "name": "The Fool",
+    "image": "images/major_0.png",
+    "direction": "Reversed",
+    "meaning": "impulsiveness, escapism, lack of planning"
+  },
+  {
+    "index": 23,
+    "name": "The Magician",
+    "image": "images/major_1.png",
+    "direction": "Reversed",
+    "meaning": "deception, 滥用能力, hesitation"
+  },
+  {
+    "index": 24,
+    "name": "The High Priestess",
+    "image": "images/major_2.png",
+    "direction": "Reversed",
+    "meaning": "secrets, distrust, repressed intuition"
+  },
+  {
+    "index": 25,
+    "name": "The Empress",
+    "image": "images/major_3.png",
+    "direction": "Reversed",
+    "meaning": "insecurity, dependence, lack of growth"
+  },
+  {
+    "index": 26,
+    "name": "The Emperor",
+    "image": "images/major_4.png",
+    "direction": "Reversed",
+    "meaning": "authoritarianism, stubbornness, need for control"
+  },
+  {
+    "index": 27,
+    "name": "The Hierophant",
+    "image": "images/major_5.png",
+    "direction": "Reversed",
+    "meaning": "rebellion, dogmatism, misguidance"
+  },
+  {
+    "index": 28,
+    "name": "The Lovers",
+    "image": "images/major_6.png",
+    "direction": "Reversed",
+    "meaning": "separation, temptation, indecision"
+  },
+  {
+    "index": 29,
+    "name": "The Chariot",
+    "image": "images/major_7.png",
+    "direction": "Reversed",
+    "meaning": "loss of control, failure, stubbornness"
+  },
+  {
+    "index": 30,
+    "name": "Strength",
+    "image": "images/major_8.png",
+    "direction": "Reversed",
+    "meaning": "weakness, emotional outburst, self-doubt"
+  },
+  {
+    "index": 31,
+    "name": "The Hermit",
+    "image": "images/major_9.png",
+    "direction": "Reversed",
+    "meaning": "isolation, 逃避, closed off"
+  },
+  {
+    "index": 32,
+    "name": "Wheel of Fortune",
+    "image": "images/major_10.png",
+    "direction": "Reversed",
+    "meaning": "misfortune, obstacles, karmic cycle"
+  },
+  {
+    "index": 33,
+    "name": "Justice",
+    "image": "images/major_11.png",
+    "direction": "Reversed",
+    "meaning": "injustice, bias, avoidance of responsibility"
+  },
+  {
+    "index": 34,
+    "name": "The Hanged Man",
+    "image": "images/major_12.png",
+    "direction": "Reversed",
+    "meaning": "stubbornness, stagnation, futility"
+  },
+  {
+    "index": 35,
+    "name": "Death",
+    "image": "images/major_13.png",
+    "direction": "Reversed",
+    "meaning": "resistance to change, stagnation, clinging to the past"
+  },
+  {
+    "index": 36,
+    "name": "Temperance",
+    "image": "images/major_14.png",
+    "direction": "Reversed",
+    "meaning": "imbalance, waste, impulsiveness"
+  },
+  {
+    "index": 37,
+    "name": "The Devil",
+    "image": "images/major_15.png",
+    "direction": "Reversed",
+    "meaning": "liberation, awakening, breaking free"
+  },
+  {
+    "index": 38,
+    "name": "The Tower",
+    "image": "images/major_16.png",
+    "direction": "Reversed",
+    "meaning": "逃避灾难, fear of change, suppressed crisis"
+  },
+  {
+    "index": 39,
+    "name": "The Star",
+    "image": "images/major_17.png",
+    "direction": "Reversed",
+    "meaning": "disappointment, confusion, 缺乏信念"
+  },
+  {
+    "index": 40,
+    "name": "The Moon",
+    "image": "images/major_18.png",
+    "direction": "Reversed",
+    "meaning": "真相揭露, relieved anxiety, dispelled confusion"
+  },
+  {
+    "index": 41,
+    "name": "The Sun",
+    "image": "images/major_19.png",
+    "direction": "Reversed",
+    "meaning": "delayed success, arrogance, fleeting happiness"
+  },
+  {
+    "index": 42,
+    "name": "Judgement",
+    "image": "images/major_20.png",
+    "direction": "Reversed",
+    "meaning": "regret, refusal to reflect, judging others"
+  },
+  {
+    "index": 43,
+    "name": "The World",
+    "image": "images/major_21.png",
+    "direction": "Reversed",
+    "meaning": "unfinished, hindrance, closed loop"
+  },
+  {
+    "index": 44,
+    "name": "Ace of Wands",
+    "image": "images/wands_1.png",
+    "direction": "Upright",
+    "meaning": "灵感, 新机会, 激情"
+  },
+  {
+    "index": 45,
+    "name": "Two of Wands",
+    "image": "images/wands_2.png",
+    "direction": "Upright",
+    "meaning": "计划, 未来展望, determination"
+  },
+  {
+    "index": 46,
+    "name": "Three of Wands",
+    "image": "images/wands_3.png",
+    "direction": "Upright",
+    "meaning": "远见, 拓展, progress"
+  },
+  {
+    "index": 47,
+    "name": "Four of Wands",
+    "image": "images/wands_4.png",
+    "direction": "Upright",
+    "meaning": "celebration, family, stability"
+  },
+  {
+    "index": 48,
+    "name": "Five of Wands",
+    "image": "images/wands_5.png",
+    "direction": "Upright",
+    "meaning": "竞争, conflict, 挑战"
+  },
+  {
+    "index": 49,
+    "name": "Six of Wands",
+    "image": "images/wands_6.png",
+    "direction": "Upright",
+    "meaning": "victory, 认可, success"
+  },
+  {
+    "index": 50,
+    "name": "Seven of Wands",
+    "image": "images/wands_7.png",
+    "direction": "Upright",
+    "meaning": "防卫, stand firm, courage"
+  },
+  {
+    "index": 51,
+    "name": "Eight of Wands",
+    "image": "images/wands_8.png",
+    "direction": "Upright",
+    "meaning": "rapid progress, 消息, 行动"
+  },
+  {
+    "index": 52,
+    "name": "Nine of Wands",
+    "image": "images/wands_9.png",
+    "direction": "Upright",
+    "meaning": "resilience, 防御, readiness"
+  },
+  {
+    "index": 53,
+    "name": "Ten of Wands",
+    "image": "images/wands_10.png",
+    "direction": "Upright",
+    "meaning": "负担, 责任, stress"
+  },
+  {
+    "index": 54,
+    "name": "Page of Wands",
+    "image": "images/wands_page.png",
+    "direction": "Upright",
+    "meaning": "探索, adventurous spirit, 新的想法"
+  },
+  {
+    "index": 55,
+    "name": "Knight of Wands",
+    "image": "images/wands_knight.png",
+    "direction": "Upright",
+    "meaning": "drive, 热情, 旅行"
+  },
+  {
+    "index": 56,
+    "name": "Queen of Wands",
+    "image": "images/wands_queen.png",
+    "direction": "Upright",
+    "meaning": "魅力, confidence, 领导力"
+  },
+  {
+    "index": 57,
+    "name": "King of Wands",
+    "image": "images/wands_king.png",
+    "direction": "Upright",
+    "meaning": "vision, 统御, 激励他人"
+  },
+  {
+    "index": 58,
+    "name": "Ace of Wands",
+    "image": "images/wands_1.png",
+    "direction": "Reversed",
+    "meaning": "delay, obstacles, 缺乏激情"
+  },
+  {
+    "index": 59,
+    "name": "Two of Wands",
+    "image": "images/wands_2.png",
+    "direction": "Reversed",
+    "meaning": "hesitation, 计划失败, 机会流失"
+  },
+  {
+    "index": 60,
+    "name": "Three of Wands",
+    "image": "images/wands_3.png",
+    "direction": "Reversed",
+    "meaning": "方向不明, delay, limited"
+  },
+  {
+    "index": 61,
+    "name": "Four of Wands",
+    "image": "images/wands_4.png",
+    "direction": "Reversed",
+    "meaning": "discord, instability, family issues"
+  },
+  {
+    "index": 62,
+    "name": "Five of Wands",
+    "image": "images/wands_5.png",
+    "direction": "Reversed",
+    "meaning": "escalated conflict, internal strife, 无法沟通"
+  },
+  {
+    "index": 63,
+    "name": "Six of Wands",
+    "image": "images/wands_6.png",
+    "direction": "Reversed",
+    "meaning": "failure, 骄傲, 被忽视"
+  },
+  {
+    "index": 64,
+    "name": "Seven of Wands",
+    "image": "images/wands_7.png",
+    "direction": "Reversed",
+    "meaning": "防线崩溃, 退缩, 自我怀疑"
+  },
+  {
+    "index": 65,
+    "name": "Eight of Wands",
+    "image": "images/wands_8.png",
+    "direction": "Reversed",
+    "meaning": "delay, 混乱, miscommunication"
+  },
+  {
+    "index": 66,
+    "name": "Nine of Wands",
+    "image": "images/wands_9.png",
+    "direction": "Reversed",
+    "meaning": "疲惫, 猜疑, 防御过度"
+  },
+  {
+    "index": 67,
+    "name": "Ten of Wands",
+    "image": "images/wands_10.png",
+    "direction": "Reversed",
+    "meaning": "overwhelming stress, 无法承担, breakdown"
+  },
+  {
+    "index": 68,
+    "name": "Page of Wands",
+    "image": "images/wands_page.png",
+    "direction": "Reversed",
+    "meaning": "impulsiveness, childishness, 缺乏方向"
+  },
+  {
+    "index": 69,
+    "name": "Knight of Wands",
+    "image": "images/wands_knight.png",
+    "direction": "Reversed",
+    "meaning": "鲁莽, impatience, unrealistic"
+  },
+  {
+    "index": 70,
+    "name": "Queen of Wands",
+    "image": "images/wands_queen.png",
+    "direction": "Reversed",
+    "meaning": "need for control, jealousy, 虚荣"
+  },
+  {
+    "index": 71,
+    "name": "King of Wands",
+    "image": "images/wands_king.png",
+    "direction": "Reversed",
+    "meaning": "overbearing, stubbornness, 滥权"
+  },
+  {
+    "index": 72,
+    "name": "Ace of Cups",
+    "image": "images/cups_1.png",
+    "direction": "Upright",
+    "meaning": "爱, emotional beginning, 灵感"
+  },
+  {
+    "index": 73,
+    "name": "Two of Cups",
+    "image": "images/cups_2.png",
+    "direction": "Upright",
+    "meaning": "partnership, harmony, emotional exchange"
+  },
+  {
+    "index": 74,
+    "name": "Three of Cups",
+    "image": "images/cups_3.png",
+    "direction": "Upright",
+    "meaning": "celebration, friendship, 社交"
+  },
+  {
+    "index": 75,
+    "name": "Four of Cups",
+    "image": "images/cups_4.png",
+    "direction": "Upright",
+    "meaning": "沉思, 自省, indifference"
+  },
+  {
+    "index": 76,
+    "name": "Five of Cups",
+    "image": "images/cups_5.png",
+    "direction": "Upright",
+    "meaning": "loss, 遗憾, low spirits"
+  },
+  {
+    "index": 77,
+    "name": "Six of Cups",
+    "image": "images/cups_6.png",
+    "direction": "Upright",
+    "meaning": "nostalgia, 童年, kindness"
+  },
+  {
+    "index": 78,
+    "name": "Seven of Cups",
+    "image": "images/cups_7.png",
+    "direction": "Upright",
+    "meaning": "illusion, 选择, temptation"
+  },
+  {
+    "index": 79,
+    "name": "Eight of Cups",
+    "image": "images/cups_8.png",
+    "direction": "Upright",
+    "meaning": "放弃, transformation, searching for deeper meaning"
+  },
+  {
+    "index": 80,
+    "name": "Nine of Cups",
+    "image": "images/cups_9.png",
+    "direction": "Upright",
+    "meaning": "满足, wish come true, happiness"
+  },
+  {
+    "index": 81,
+    "name": "Ten of Cups",
+    "image": "images/cups_10.png",
+    "direction": "Upright",
+    "meaning": "happy family, harmony, emotional fulfillment"
+  },
+  {
+    "index": 82,
+    "name": "Page of Cups",
+    "image": "images/cups_page.png",
+    "direction": "Upright",
+    "meaning": "sensitivity, 消息, emotional awakening"
+  },
+  {
+    "index": 83,
+    "name": "Knight of Cups",
+    "image": "images/cups_knight.png",
+    "direction": "Upright",
+    "meaning": "浪漫, 追求, consideration"
+  },
+  {
+    "index": 84,
+    "name": "Queen of Cups",
+    "image": "images/cups_queen.png",
+    "direction": "Upright",
+    "meaning": "温柔, compassion, empathy"
+  },
+  {
+    "index": 85,
+    "name": "King of Cups",
+    "image": "images/cups_king.png",
+    "direction": "Upright",
+    "meaning": "mature emotions, 理解, stability"
+  },
+  {
+    "index": 86,
+    "name": "Ace of Cups",
+    "image": "images/cups_1.png",
+    "direction": "Reversed",
+    "meaning": "emotional blockage, disappointment, 爱被压抑"
+  },
+  {
+    "index": 87,
+    "name": "Two of Cups",
+    "image": "images/cups_2.png",
+    "direction": "Reversed",
+    "meaning": "broken relationship, distrust, imbalance"
+  },
+  {
+    "index": 88,
+    "name": "Three of Cups",
+    "image": "images/cups_3.png",
+    "direction": "Reversed",
+    "meaning": "过度放纵, 排他, 社交疲惫"
+  },
+  {
+    "index": 89,
+    "name": "Four of Cups",
+    "image": "images/cups_4.png",
+    "direction": "Reversed",
+    "meaning": "机会重燃, 积极回应, awakening"
+  },
+  {
+    "index": 90,
+    "name": "Five of Cups",
+    "image": "images/cups_5.png",
+    "direction": "Reversed",
+    "meaning": "释怀, 接受, emotional recovery"
+  },
+  {
+    "index": 91,
+    "name": "Six of Cups",
+    "image": "images/cups_6.png",
+    "direction": "Reversed",
+    "meaning": "沉溺过去, escapism, stagnation"
+  },
+  {
+    "index": 92,
+    "name": "Seven of Cups",
+    "image": "images/cups_7.png",
+    "direction": "Reversed",
+    "meaning": "明辨选择, 摆脱幻想, 聚焦"
+  },
+  {
+    "index": 93,
+    "name": "Eight of Cups",
+    "image": "images/cups_8.png",
+    "direction": "Reversed",
+    "meaning": "犹豫离开, wandering, 难以割舍"
+  },
+  {
+    "index": 94,
+    "name": "Nine of Cups",
+    "image": "images/cups_9.png",
+    "direction": "Reversed",
+    "meaning": "虚荣, 自满, false sense of satisfaction"
+  },
+  {
+    "index": 95,
+    "name": "Ten of Cups",
+    "image": "images/cups_10.png",
+    "direction": "Reversed",
+    "meaning": "family discord, emotional rupture, disillusionment"
+  },
+  {
+    "index": 96,
+    "name": "Page of Cups",
+    "image": "images/cups_page.png",
+    "direction": "Reversed",
+    "meaning": "emotional, 逃避, 轻浮"
+  },
+  {
+    "index": 97,
+    "name": "Knight of Cups",
+    "image": "images/cups_knight.png",
+    "direction": "Reversed",
+    "meaning": "illusion, unrealistic, deception"
+  },
+  {
+    "index": 98,
+    "name": "Queen of Cups",
+    "image": "images/cups_queen.png",
+    "direction": "Reversed",
+    "meaning": "敏感过度, dependence, instability"
+  },
+  {
+    "index": 99,
+    "name": "King of Cups",
+    "image": "images/cups_king.png",
+    "direction": "Reversed",
+    "meaning": "emotional repression, 操控, emotional instability"
+  },
+  {
+    "index": 100,
+    "name": "Ace of Swords",
+    "image": "images/swords_1.png",
+    "direction": "Upright",
+    "meaning": "清晰, truth, 新的思想"
+  },
+  {
+    "index": 101,
+    "name": "Two of Swords",
+    "image": "images/swords_2.png",
+    "direction": "Upright",
+    "meaning": "犹豫不决, balance, repressed feelings"
+  },
+  {
+    "index": 102,
+    "name": "Three of Swords",
+    "image": "images/swords_3.png",
+    "direction": "Upright",
+    "meaning": "heartbreak, 痛苦, loss"
+  },
+  {
+    "index": 103,
+    "name": "Four of Swords",
+    "image": "images/swords_4.png",
+    "direction": "Upright",
+    "meaning": "rest, recovery, 静养"
+  },
+  {
+    "index": 104,
+    "name": "Five of Swords",
+    "image": "images/swords_5.png",
+    "direction": "Upright",
+    "meaning": "conflict, 自私, 胜之不武"
+  },
+  {
+    "index": 105,
+    "name": "Six of Swords",
+    "image": "images/swords_6.png",
+    "direction": "Upright",
+    "meaning": "过渡, 旅行, 离开困境"
+  },
+  {
+    "index": 106,
+    "name": "Seven of Swords",
+    "image": "images/swords_7.png",
+    "direction": "Upright",
+    "meaning": "deception, 策略, 隐秘行动"
+  },
+  {
+    "index": 107,
+    "name": "Eight of Swords",
+    "image": "images/swords_8.png",
+    "direction": "Upright",
+    "meaning": "trapped, 限制, 自我束缚"
+  },
+  {
+    "index": 108,
+    "name": "Nine of Swords",
+    "image": "images/swords_9.png",
+    "direction": "Upright",
+    "meaning": "焦虑, nightmare, regret"
+  },
+  {
+    "index": 109,
+    "name": "Ten of Swords",
+    "image": "images/swords_10.png",
+    "direction": "Upright",
+    "meaning": "ending, failure, 痛苦终结"
+  },
+  {
+    "index": 110,
+    "name": "Page of Swords",
+    "image": "images/swords_page.png",
+    "direction": "Upright",
+    "meaning": "curiosity, learning, 警觉"
+  },
+  {
+    "index": 111,
+    "name": "Knight of Swords",
+    "image": "images/swords_knight.png",
+    "direction": "Upright",
+    "meaning": "impulsiveness, 果断, swift action"
+  },
+  {
+    "index": 112,
+    "name": "Queen of Swords",
+    "image": "images/swords_queen.png",
+    "direction": "Upright",
+    "meaning": "理性, 独立, 诚实"
+  },
+  {
+    "index": 113,
+    "name": "King of Swords",
+    "image": "images/swords_king.png",
+    "direction": "Upright",
+    "meaning": "wisdom, authority, fairness"
+  },
+  {
+    "index": 114,
+    "name": "Ace of Swords",
+    "image": "images/swords_1.png",
+    "direction": "Reversed",
+    "meaning": "混乱, misguidance, blocked information"
+  },
+  {
+    "index": 115,
+    "name": "Two of Swords",
+    "image": "images/swords_2.png",
+    "direction": "Reversed",
+    "meaning": "poor decision-making, inner conflict, escapism"
+  },
+  {
+    "index": 116,
+    "name": "Three of Swords",
+    "image": "images/swords_3.png",
+    "direction": "Reversed",
+    "meaning": "healing from pain, 释怀, 重新站起"
+  },
+  {
+    "index": 117,
+    "name": "Four of Swords",
+    "image": "images/swords_4.png",
+    "direction": "Reversed",
+    "meaning": "insecurity, lack of rest, forced to move on"
+  },
+  {
+    "index": 118,
+    "name": "Five of Swords",
+    "image": "images/swords_5.png",
+    "direction": "Reversed",
+    "meaning": "reconciliation, reflection, 放下冲突"
+  },
+  {
+    "index": 119,
+    "name": "Six of Swords",
+    "image": "images/swords_6.png",
+    "direction": "Reversed",
+    "meaning": "无法前进, 逃避问题, 返回过去"
+  },
+  {
+    "index": 120,
+    "name": "Seven of Swords",
+    "image": "images/swords_7.png",
+    "direction": "Reversed",
+    "meaning": "真相揭露, 被揭穿, admit mistake"
+  },
+  {
+    "index": 121,
+    "name": "Eight of Swords",
+    "image": "images/swords_8.png",
+    "direction": "Reversed",
+    "meaning": "解脱, 突破限制, 自我觉醒"
+  },
+  {
+    "index": 122,
+    "name": "Nine of Swords",
+    "image": "images/swords_9.png",
+    "direction": "Reversed",
+    "meaning": "relief from worry, emotional recovery, 重拾希望"
+  },
+  {
+    "index": 123,
+    "name": "Ten of Swords",
+    "image": "images/swords_10.png",
+    "direction": "Reversed",
+    "meaning": "挣扎中复原, 缓慢重建, not yet over"
+  },
+  {
+    "index": 124,
+    "name": "Page of Swords",
+    "image": "images/swords_page.png",
+    "direction": "Reversed",
+    "meaning": "excessive curiosity, gossip, 散布谣言"
+  },
+  {
+    "index": 125,
+    "name": "Knight of Swords",
+    "image": "images/swords_knight.png",
+    "direction": "Reversed",
+    "meaning": "鲁莽, impulsiveness, 自以为是"
+  },
+  {
+    "index": 126,
+    "name": "Queen of Swords",
+    "image": "images/swords_queen.png",
+    "direction": "Reversed",
+    "meaning": "apathy, sarcasm, emotional suppression"
+  },
+  {
+    "index": 127,
+    "name": "King of Swords",
+    "image": "images/swords_king.png",
+    "direction": "Reversed",
+    "meaning": "arbitrariness, 操控, 误判"
+  },
+  {
+    "index": 128,
+    "name": "Ace of Pentacles",
+    "image": "images/pentacles_1.png",
+    "direction": "Upright",
+    "meaning": "新的机会, 财富, tangible results"
+  },
+  {
+    "index": 129,
+    "name": "Two of Pentacles",
+    "image": "images/pentacles_2.png",
+    "direction": "Upright",
+    "meaning": "balance, 灵活, multitasking"
+  },
+  {
+    "index": 130,
+    "name": "Three of Pentacles",
+    "image": "images/pentacles_3.png",
+    "direction": "Upright",
+    "meaning": "cooperation, 技能成长, professional growth"
+  },
+  {
+    "index": 131,
+    "name": "Four of Pentacles",
+    "image": "images/pentacles_4.png",
+    "direction": "Upright",
+    "meaning": "控制, safety, 理财保守"
+  },
+  {
+    "index": 132,
+    "name": "Five of Pentacles",
+    "image": "images/pentacles_5.png",
+    "direction": "Upright",
+    "meaning": "贫困, 排斥, 物质匮乏"
+  },
+  {
+    "index": 133,
+    "name": "Six of Pentacles",
+    "image": "images/pentacles_6.png",
+    "direction": "Upright",
+    "meaning": "generosity, 施与受, 财务平衡"
+  },
+  {
+    "index": 134,
+    "name": "Seven of Pentacles",
+    "image": "images/pentacles_7.png",
+    "direction": "Upright",
+    "meaning": "patience, 投资回报, fruit of labor"
+  },
+  {
+    "index": 135,
+    "name": "Eight of Pentacles",
+    "image": "images/pentacles_8.png",
+    "direction": "Upright",
+    "meaning": "focus, 技能提升, diligence"
+  },
+  {
+    "index": 136,
+    "name": "Nine of Pentacles",
+    "image": "images/pentacles_9.png",
+    "direction": "Upright",
+    "meaning": "独立, abundance, 自我成就"
+  },
+  {
+    "index": 137,
+    "name": "Ten of Pentacles",
+    "image": "images/pentacles_10.png",
+    "direction": "Upright",
+    "meaning": "财富传承, family, sense of security"
+  },
+  {
+    "index": 138,
+    "name": "Page of Pentacles",
+    "image": "images/pentacles_page.png",
+    "direction": "Upright",
+    "meaning": "learning, 新计划, 现实目标"
+  },
+  {
+    "index": 139,
+    "name": "Knight of Pentacles",
+    "image": "images/pentacles_knight.png",
+    "direction": "Upright",
+    "meaning": "reliable, 稳重, 有条理"
+  },
+  {
+    "index": 140,
+    "name": "Queen of Pentacles",
+    "image": "images/pentacles_queen.png",
+    "direction": "Upright",
+    "meaning": "pragmatism, care, abundance"
+  },
+  {
+    "index": 141,
+    "name": "King of Pentacles",
+    "image": "images/pentacles_king.png",
+    "direction": "Upright",
+    "meaning": "财富, 领导力, business sense"
+  },
+  {
+    "index": 142,
+    "name": "Ace of Pentacles",
+    "image": "images/pentacles_1.png",
+    "direction": "Reversed",
+    "meaning": "错失机会, 金钱问题, unrealistic"
+  },
+  {
+    "index": 143,
+    "name": "Two of Pentacles",
+    "image": "images/pentacles_2.png",
+    "direction": "Reversed",
+    "meaning": "混乱, 无法平衡, 财务混乱"
+  },
+  {
+    "index": 144,
+    "name": "Three of Pentacles",
+    "image": "images/pentacles_3.png",
+    "direction": "Reversed",
+    "meaning": "缺乏合作, 技能不足, 项目失败"
+  },
+  {
+    "index": 145,
+    "name": "Four of Pentacles",
+    "image": "images/pentacles_4.png",
+    "direction": "Reversed",
+    "meaning": "贪婪, loss of control, 过度保护"
+  },
+  {
+    "index": 146,
+    "name": "Five of Pentacles",
+    "image": "images/pentacles_5.png",
+    "direction": "Reversed",
+    "meaning": "经济恢复, end of hardship, 改善"
+  },
+  {
+    "index": 147,
+    "name": "Six of Pentacles",
+    "image": "images/pentacles_6.png",
+    "direction": "Reversed",
+    "meaning": "inequality, 被利用, 索取过度"
+  },
+  {
+    "index": 148,
+    "name": "Seven of Pentacles",
+    "image": "images/pentacles_7.png",
+    "direction": "Reversed",
+    "meaning": "没有成果, 浪费时间, disappointment"
+  },
+  {
+    "index": 149,
+    "name": "Eight of Pentacles",
+    "image": "images/pentacles_8.png",
+    "direction": "Reversed",
+    "meaning": "缺乏专注, 重复错误, immaturity"
+  },
+  {
+    "index": 150,
+    "name": "Nine of Pentacles",
+    "image": "images/pentacles_9.png",
+    "direction": "Reversed",
+    "meaning": "dependency, 物质主义, 虚荣"
+  },
+  {
+    "index": 151,
+    "name": "Ten of Pentacles",
+    "image": "images/pentacles_10.png",
+    "direction": "Reversed",
+    "meaning": "family conflict, 财务问题, 缺乏安全"
+  },
+  {
+    "index": 152,
+    "name": "Page of Pentacles",
+    "image": "images/pentacles_page.png",
+    "direction": "Reversed",
+    "meaning": "缺乏动力, distraction, unrealistic"
+  },
+  {
+    "index": 153,
+    "name": "Knight of Pentacles",
+    "image": "images/pentacles_knight.png",
+    "direction": "Reversed",
+    "meaning": "stubbornness, stagnation, laziness"
+  },
+  {
+    "index": 154,
+    "name": "Queen of Pentacles",
+    "image": "images/pentacles_queen.png",
+    "direction": "Reversed",
+    "meaning": "自私, need for control, 物质依赖"
+  },
+  {
+    "index": 155,
+    "name": "King of Pentacles",
+    "image": "images/pentacles_king.png",
+    "direction": "Reversed",
+    "meaning": "贪婪, 滥权, business failure"
+  }
+]
