@@ -1,0 +1,21 @@
+{
+  "mobile_title": "Tarot Chat Interpreter",
+  "key_placeholder": "Enter your DeepSeek API Key",
+  "question_placeholder": "Enter your question...",
+  "draw_button": "Draw Card",
+  "send_button": "Send",
+  "current_card": "Current Tarot Card",
+  "direction": "Direction",
+  "meaning": "Meaning",
+  "enter_question": "Please enter a question",
+  "enter_key": "Please enter your API Key",
+  "card_error": "Failed to draw a card. Please check the data.",
+  "load_error": "Failed to load tarot card data: ",
+  "draw_first": "Please draw a card first before asking questions.",
+  "reply_error": "Request error: ",
+  "system_prompt": "You are an experienced tarot interpreter.",
+  "prompt_prefix": "The question is:",
+  "prompt_drawn": "I drew",
+  "prompt_meaning": "which means",
+  "prompt_request": "Please give a detailed interpretation of this card."
+}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getCardIndex } from "../utils/hash";
 import ReactMarkdown from "react-markdown";
+import { useLang } from "../context/LanguageProvider";
 
 export default function MobilePage() {
   const [question, setQuestion] = useState("");
@@ -9,24 +10,21 @@ export default function MobilePage() {
   const [sessions, setSessions] = useState([]);
   const [activeSessionIndex, setActiveSessionIndex] = useState(null);
   const [loading, setLoading] = useState(false);
+  const { t, lang } = useLang();
 
   useEffect(() => {
-    fetch("./tarot_zh.json")
+    const tarotPath = lang === "zh" ? "./tarot_zh.json" : "./tarot_en.json";
+    fetch(tarotPath)
       .then((res) => res.json())
       .then((data) => setTarotDeck(data))
-      .catch((err) => alert("无法加载塔罗牌数据：" + err.message));
-  }, []);
+      .catch((err) => alert(t("load_error") + err.message));
+  }, [lang]);
 
-  // ✅ 当有 pending 的新 session 出现，自动触发解读
   useEffect(() => {
     const index = sessions.findIndex((s) => s.pending);
     if (index !== -1 && apiKey) {
       const session = sessions[index];
-      const msgs = session.messages;
-
-      fetchReply(index, msgs);
-
-      // 标记为已处理，防止重复调用
+      fetchReply(index, session.messages);
       setSessions((prev) => {
         const updated = [...prev];
         updated[index] = { ...updated[index], pending: false };
@@ -36,24 +34,24 @@ export default function MobilePage() {
   }, [sessions]);
 
   async function handleDrawCard() {
-    if (!question.trim()) return alert("请输入问题");
-    if (!apiKey) return alert("请填写 API Key");
+    if (!question.trim()) return alert(t("enter_question"));
+    if (!apiKey) return alert(t("enter_key"));
 
     const timestamp = Date.now().toString();
     const index = await getCardIndex(question, timestamp);
     const card = tarotDeck[index];
-    if (!card) return alert("抽牌失败，请检查数据");
+    if (!card) return alert(t("card_error"));
 
-    const systemMsg = { role: "system", content: "你是一个经验丰富的塔罗解读师。" };
+    const systemMsg = { role: "system", content: t("system_prompt") };
     const userMsg = {
       role: "user",
-      content: `问题是：「${question}」，我抽到了「${card.name}」（${card.direction}），含义为「${card.meaning}」。请详细解读这张牌。`
+      content: `${t("prompt_prefix")}「${question}」，${t("prompt_drawn")}「${card.name}」（${card.direction}），${t("prompt_meaning")}「${card.meaning}」。${t("prompt_request")}`
     };
 
     const newSession = {
       card,
       messages: [systemMsg, userMsg],
-      pending: true // ✅ 标记为待处理
+      pending: true
     };
 
     setSessions((prev) => [...prev, newSession]);
@@ -63,8 +61,8 @@ export default function MobilePage() {
 
   async function handleSend() {
     if (!question.trim()) return;
-    if (activeSessionIndex === null) return alert("请先抽牌再提问");
-    if (!apiKey) return alert("请填写 API Key");
+    if (activeSessionIndex === null) return alert(t("draw_first"));
+    if (!apiKey) return alert(t("enter_key"));
 
     const userMsg = { role: "user", content: question };
     const currentSession = sessions[activeSessionIndex];
@@ -109,7 +107,7 @@ export default function MobilePage() {
         return updated;
       });
     } catch (err) {
-      alert("请求出错：" + err.message);
+      alert(t("reply_error") + err.message);
     } finally {
       setLoading(false);
     }
@@ -135,25 +133,23 @@ export default function MobilePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      {/* 顶部 API Key 输入 */}
       <div className="p-3">
-        <h1 className="text-xl font-bold mb-3">📱 塔罗聊天解读</h1>
+        <h1 className="text-xl font-bold mb-3">📱 {t("mobile_title")}</h1>
         <input
           type="password"
           className="border p-2 rounded w-full mb-3"
-          placeholder="请输入你的 DeepSeek API Key"
+          placeholder={t("key_placeholder")}
           onChange={(e) => setApiKey(e.target.value)}
         />
       </div>
 
-      {/* 聊天历史区域 */}
       <div className="flex-1 overflow-y-auto px-3 pb-32">
         {sessions.map((session, sIdx) => (
           <div key={sIdx} className="mb-6 border-t pt-3">
             <div className="bg-yellow-100 border rounded p-3 text-sm">
-              <p className="font-bold mb-1">🎴 当前塔罗牌：{session.card.name}</p>
-              <p>🧭 方向：{session.card.direction}</p>
-              <p>💡 含义：{session.card.meaning}</p>
+              <p className="font-bold mb-1">🎴 {t("current_card")}: {session.card.name}</p>
+              <p>🧭 {t("direction")}: {session.card.direction}</p>
+              <p>💡 {t("meaning")}: {session.card.meaning}</p>
               {session.card.image && (
                 <img
                   src={session.card.image}
@@ -171,12 +167,11 @@ export default function MobilePage() {
         ))}
       </div>
 
-      {/* ✅ 底部输入框和按钮 */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-3">
         <textarea
           rows={2}
           className="border w-full p-2 rounded mb-2"
-          placeholder="请输入问题..."
+          placeholder={t("question_placeholder")}
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
         />
@@ -185,14 +180,14 @@ export default function MobilePage() {
             onClick={handleDrawCard}
             className="flex-1 bg-purple-600 text-white px-3 py-2 rounded"
           >
-            抽牌
+            {t("draw_button")}
           </button>
           <button
             onClick={handleSend}
             className="flex-1 bg-blue-600 text-white px-3 py-2 rounded"
             disabled={activeSessionIndex === null || loading}
           >
-            发送
+            {t("send_button")}
           </button>
         </div>
       </div>

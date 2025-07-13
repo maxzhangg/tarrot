@@ -1,0 +1,21 @@
+{
+  "mobile_title": "塔罗聊天解读",
+  "key_placeholder": "请输入你的 DeepSeek API Key",
+  "question_placeholder": "请输入问题...",
+  "draw_button": "抽牌",
+  "send_button": "发送",
+  "current_card": "当前塔罗牌",
+  "direction": "方向",
+  "meaning": "含义",
+  "enter_question": "请输入问题",
+  "enter_key": "请填写 API Key",
+  "card_error": "抽牌失败，请检查数据",
+  "load_error": "无法加载塔罗牌数据：",
+  "draw_first": "请先抽牌再提问",
+  "reply_error": "请求出错：",
+  "system_prompt": "你是一个经验丰富的塔罗解读师。",
+  "prompt_prefix": "问题是：",
+  "prompt_drawn": "我抽到了",
+  "prompt_meaning": "含义为",
+  "prompt_request": "请详细解读这张牌。"
+}

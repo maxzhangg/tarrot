@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getCardIndex } from "../utils/hash";
 import ReactMarkdown from "react-markdown";
+import { useLang } from "../context/LanguageProvider";
 
 export default function PCPage() {
   const [question, setQuestion] = useState("");
@@ -9,22 +10,21 @@ export default function PCPage() {
   const [sessions, setSessions] = useState([]);
   const [activeSessionIndex, setActiveSessionIndex] = useState(null);
   const [loading, setLoading] = useState(false);
+  const { t, lang } = useLang();
 
   useEffect(() => {
-    fetch("./tarot_zh.json")
+    const tarotPath = lang === "zh" ? "./tarot_zh.json" : "./tarot_en.json";
+    fetch(tarotPath)
       .then((res) => res.json())
       .then((data) => setTarotDeck(data))
-      .catch(() => alert("卡牌数据无效或未加载"));
-  }, []);
+      .catch((err) => alert(t("load_error") + err.message));
+  }, [lang]);
 
   useEffect(() => {
     const index = sessions.findIndex((s) => s.pending);
     if (index !== -1 && apiKey) {
       const session = sessions[index];
-      const msgs = session.messages;
-
-      fetchReply(index, msgs);
-
+      fetchReply(index, session.messages);
       setSessions((prev) => {
         const updated = [...prev];
         updated[index] = { ...updated[index], pending: false };
@@ -37,18 +37,18 @@ export default function PCPage() {
   const messages = sessions[activeSessionIndex]?.messages || [];
 
   async function handleDrawCard() {
-    if (!question.trim()) return alert("请输入问题");
-    if (!apiKey) return alert("请填写 API Key");
+    if (!question.trim()) return alert(t("enter_question"));
+    if (!apiKey) return alert(t("enter_key"));
 
     const timestamp = Date.now().toString();
     const index = await getCardIndex(question, timestamp);
     const card = tarotDeck[index];
-    if (!card) return alert("抽牌失败，请检查数据");
+    if (!card) return alert(t("card_error"));
 
-    const systemMsg = { role: "system", content: "你是一个经验丰富的塔罗解读师。" };
+    const systemMsg = { role: "system", content: t("system_prompt") };
     const userMsg = {
       role: "user",
-      content: `问题是：「${question}」，我抽到了「${card.name}」（${card.direction}），含义为「${card.meaning}」。请详细解读这张牌。`
+      content: `${t("prompt_prefix")}「${question}」，${t("prompt_drawn")}「${card.name}」（${card.direction}），${t("prompt_meaning")}「${card.meaning}」。${t("prompt_request")}`
     };
 
     const newSession = {
@@ -64,8 +64,8 @@ export default function PCPage() {
 
   async function handleSend() {
     if (!question.trim()) return;
-    if (activeSessionIndex === null) return alert("请先抽牌再提问");
-    if (!apiKey) return alert("请填写 API Key");
+    if (activeSessionIndex === null) return alert(t("draw_first"));
+    if (!apiKey) return alert(t("enter_key"));
 
     const userMsg = { role: "user", content: question };
     const updatedMessages = [...messages, userMsg];
@@ -101,7 +101,7 @@ export default function PCPage() {
 
       const json = await res.json();
       const reply = json.choices?.[0]?.message?.content;
-      if (!reply) throw new Error("AI 无回复");
+      if (!reply) throw new Error(t("no_reply"));
 
       setSessions((prev) => {
         const updated = [...prev];
@@ -109,7 +109,7 @@ export default function PCPage() {
         return updated;
       });
     } catch (err) {
-      alert("请求出错：" + err.message);
+      alert(t("reply_error") + err.message);
     } finally {
       setLoading(false);
     }
@@ -140,9 +140,9 @@ export default function PCPage() {
         <div className="w-1/3 bg-yellow-50 p-4 overflow-y-auto">
           {currentCard ? (
             <div className="border rounded p-3 text-sm">
-              <p className="font-bold mb-1">🎴 当前塔罗牌：{currentCard.name}</p>
-              <p>🧭 方向：{currentCard.direction}</p>
-              <p>💡 含义：{currentCard.meaning}</p>
+              <p className="font-bold mb-1">🎴 {t("current_card")}: {currentCard.name}</p>
+              <p>🧭 {t("direction")}: {currentCard.direction}</p>
+              <p>💡 {t("meaning")}: {currentCard.meaning}</p>
               {currentCard.image && (
                 <img
                   src={currentCard.image}
@@ -152,7 +152,7 @@ export default function PCPage() {
               )}
             </div>
           ) : (
-            <p className="text-gray-500">请先抽一张牌</p>
+            <p className="text-gray-500">{t("draw_first")}</p>
           )}
         </div>
 
@@ -163,7 +163,7 @@ export default function PCPage() {
             <input
               type="password"
               className="border p-2 rounded w-full"
-              placeholder="请输入你的 DeepSeek API Key"
+              placeholder={t("key_placeholder")}
               onChange={(e) => setApiKey(e.target.value)}
             />
           </div>
@@ -178,24 +178,24 @@ export default function PCPage() {
             <textarea
               rows={2}
               className="border p-2 rounded w-full"
-              placeholder="请输入问题..."
+              placeholder={t("question_placeholder")}
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
             />
             <div className="flex gap-2">
-          <button
-            onClick={handleDrawCard}
-            className="flex-1 bg-purple-600 text-white px-3 py-2 rounded"
-          >
-            抽牌
-          </button>
-          <button
-            onClick={handleSend}
-            className="flex-1 bg-blue-600 text-white px-3 py-2 rounded"
-            disabled={activeSessionIndex === null || loading}
-          >
-            发送
-          </button>
+              <button
+                onClick={handleDrawCard}
+                className="flex-1 bg-purple-600 text-white px-3 py-2 rounded"
+              >
+                {t("draw_button")}
+              </button>
+              <button
+                onClick={handleSend}
+                className="flex-1 bg-blue-600 text-white px-3 py-2 rounded"
+                disabled={activeSessionIndex === null || loading}
+              >
+                {t("send_button")}
+              </button>
             </div>
           </div>
         </div>
